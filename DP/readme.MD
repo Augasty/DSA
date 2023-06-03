@@ -1,5 +1,5 @@
 
-## Alivin's Memoization Recipe
+## Memoization Recipe
 
 1. Make it work.
   - Visualize the problem as a tree
@@ -13,7 +13,7 @@
   - Add a base case to return memo values ( memo fetching logic )
   - Store values into the memo, i.e. pass along the values to future calls
 
-  ## Alivin's Tabulation Recipe
+  ## Tabulation Recipe
 
   Visualize the problem as a table.
 
@@ -23,5 +23,7 @@
   Seed the trivial answer into the table.
 
   Iterate through the table.
-
   By iterating, fill the further positions of the table.
+
+
+  source: freecodecamp dp video
