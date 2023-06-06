@@ -49,14 +49,15 @@ def allConstructMem(target: str, array: list, mem: dict = None):
 
 def allConstructTab(target: str, prefixes: list):
     dp = {target[i:]: [] for i in range(len(target) + 1)}
+    #{'purple': [], 'urple': [], 'rple': [], 'ple': [], 'le': [], 'e': [], '': []}
     dp[target] = [[]]
     for word in dp:
         for prefix in prefixes:
             if isPrefix(word, prefix):
                 for pos in dp[word]:
-                    pos = pos.copy()
-                    pos.append(prefix)
-                    dp[word[len(prefix):]].append(pos)
+                    posx = pos + []
+                    posx.append(prefix)
+                    dp[word[len(prefix):]].append(posx)
     return dp[""]
 
 

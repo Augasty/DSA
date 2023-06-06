@@ -13,11 +13,14 @@ print(arr2)
 # array deep copy
 arr3 = [1,2,3]
 arr4 = copy.deepcopy(arr3)
-arr4[2] = 'sayak'
+arr5 = arr3 + []
+arr3[2] = 'sayak'
 print(arr3)
 print(arr4)
-# [1, 2, 3]
+print(arr5)
 # [1, 2, 'sayak']
+# [1, 2, 3]
+# [1, 2, 3]
 # in deep copy, arr4 has a completely new array, so, old array arr3 is not effected when arr4 is changed
 
 # numbers, strings always deepcopy
